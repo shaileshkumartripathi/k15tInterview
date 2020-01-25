@@ -4,8 +4,7 @@ import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.StringWriter;
 
@@ -14,7 +13,6 @@ import java.io.StringWriter;
 public class RegistrationController {
 
     @Autowired private VelocityEngine velocityEngine;
-
 
     @RequestMapping("/registration.html")
     public String registration() {
